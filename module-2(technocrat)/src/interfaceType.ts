@@ -13,13 +13,34 @@ interface User2{
     age: number;
 }
 
-type UserWithRole1 = User1 & {role:'student'}
+type UserWithRole1 = User1 & {role:string} //alia type sysytem
 
-const user : UserWithRole1 ={
+interface UserWithRole2 extends User2{     //interface type syste
+    role: string
+}
+
+const user1 : UserWithRole1 ={
     name:'enayet',
     age:23,
     role:'student'
 }
+
+
+const User2: UserWithRole2 ={
+    name:'rifat',
+    age:34,
+    role:'manager'
+}
+
+
+//interface array
+
+type rollNumber = number[] //alias type system
+
+
+
+const userRollNumber:rollNumber = [1,2,34,4]
+
 
 
 
