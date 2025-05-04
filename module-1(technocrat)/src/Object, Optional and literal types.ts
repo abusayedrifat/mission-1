@@ -32,4 +32,4 @@ const user2 :{
     isTrue : true
 }
 
-user2.department = 'cse' //Cannot assign to 'department' because it is a read-only property.
+// user2.department = 'cse'     //===>Cannot assign to 'department' because it is a read-only property.
