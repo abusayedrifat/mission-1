@@ -1,4 +1,6 @@
 {
+
+    //========>>ts-node-dev --respawn --transpile-only ./src/genericWithInterface.ts
     //generic type
 
     type genericArray<params> = Array<params>;
@@ -35,6 +37,10 @@
         "lichi",
         "banana",
     ];
+    
+    type FruitTuple2 = genericTuple<string,
+        number,
+        { address: string; weight: string; contactNo: number }>
 
     const fruitTuple2: genericTuple<
         string,
@@ -45,4 +51,8 @@
             123,
             { address: "rajshahi", weight: "62 kg", contactNo: +88013100000 },
         ];
+
+
+    
+
 }
