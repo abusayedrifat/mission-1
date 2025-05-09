@@ -19,12 +19,35 @@ type AlphaNumeric = number | string
 
  //in guard
 
- 
+ type NormalUser = {
+    name:string
+ }
 
+ type AdminUser = {
+    name:string;
+    role:'admin'
+ }
 
+ const getUser = (user: NormalUser | AdminUser ) =>{
+    if ('role' in user) {
+        console.log(`This user is ${user.role} and name is ${user.name}`);
+    }
+    else{
+        console.log(`this is normal user and his name is ${user.name} `);
+        
+    }
+ }
 
+ const user1 : NormalUser ={
+    name:'public'
+ }
 
+ const user2: AdminUser ={
+    name:'rifat',
+    role:'admin'
+ }
 
+getUser(user2)
 
 
 
