@@ -27,6 +27,7 @@ const mentorList = {
     ...mentors1,
     ...mentors2
 }
+console.log(mentorList);
 
 //rest operator (cousin of spread opretor)
 
